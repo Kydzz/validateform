@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+    overflow:hidden;
+}
+body{
+  display: flex;
+  align-items: center;
+  justity-content: center;
+  height: 100vh;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+form{
+  width: 380px;
+  margin: 0 auto;
+  position: relative; 
+  height: 350px;
+}
+label,input{
+  display: block;
+}
+label{
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 1px;
+  color: #ff8100;
+  margin-left: 75px;
+}
+input[type='text'],input[type='password']{
+  padding: 10px;
+  border: 2px solid #B0BEC5;
+  outline: 0;
+  margin-bottom:10px;
+  width: 60%;
+  border-radius: 999px;
+  margin-left: 63px;
+}
+/*input[type='text']::placeholder{
+	padding-left: : 6px;
+}*/
+input[type='submit']{
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  outline: 0;
+  margin-bottom:10px;
+  border-radius: 999px;
+  margin-left: 63px;
+  background-color: #ccc;
+}
+input[type='submit']:hover{
+	background-color: #FFF3CD;
+	border:1px solid #ff8100;
+	cursor: pointer;
+}
+input:invalid{
+  border:2px solid #DD2C00;
+  color: red;
+}
+
+#notity{
+  padding: 10px;
+  border: 1px solid #B0BEC5;
+  outline: 0;
+  margin-bottom:10px;
+  border-radius: 999px;
+}
+#notity.error{
+	background-color: #fff3cd;
+	border: 2px solid red;
+}
